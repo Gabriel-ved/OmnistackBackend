@@ -16,7 +16,7 @@ server.use(cors());
 server.use(express.json());//p express nao usa json por padrao
 server.use(routes);
 
-server.listen(3333);
+server.listen(process.env.PORT || 3000);
 //yarn add nodemon -D
 //em package.json fazemos uma alteração chamada "dev"
 //a dev tera o link do script
